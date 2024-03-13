@@ -7,7 +7,7 @@ tokenizer = TapasTokenizer.from_pretrained("google/tapas-base-finetuned-wtq")
 model = TapasForQuestionAnswering.from_pretrained("google/tapas-base-finetuned-wtq")
 
 # Load the conversation table
-conversation_table = pd.read_csv("conversation.csv")
+conversation_table = pd.read_csv("Conversation.csv")
 
 # Streamlit app
 def main():
