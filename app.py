@@ -1,12 +1,13 @@
 import subprocess
 subprocess.run(["pip", "install", "torch"])
-def install_package(package_name):
-    try:
-        subprocess.check_call(["pip", "install", package_name])
-        print(f"Successfully installed {package_name}")
-    except subprocess.CalledProcessError:
-        print(f"Failed to install {package_name}")
-install_package("torch-scatter==2.1.2")
+#def install_package(package_name):
+   # try:
+      #  subprocess.check_call(["pip", "install", package_name])
+      #  print(f"Successfully installed {package_name}")
+   # except subprocess.CalledProcessError:
+      #  print(f"Failed to install {package_name}")
+#install_package("torch-scatter==2.1.2")
+subprocess.run(["pip", "install", "torch-scatter"])
 
 from transformers import TapasForQuestionAnswering, TapasTokenizer
 import pandas as pd
