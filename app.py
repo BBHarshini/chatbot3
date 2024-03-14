@@ -6,7 +6,7 @@ subprocess.run(["pip", "install", "torch"])
       #  print(f"Successfully installed {package_name}")
    # except subprocess.CalledProcessError:
       #  print(f"Failed to install {package_name}")
-#install_package("torch-scatter==2.1.2")
+#install_package("torch-scatter -f https://pytorch-geometric.com/whl/torch-1.8.0+cu101.html")
 subprocess.run(["pip", "install", "torch-scatter"])
 
 from transformers import TapasForQuestionAnswering, TapasTokenizer
