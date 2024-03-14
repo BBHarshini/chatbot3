@@ -1,5 +1,5 @@
 import subprocess
-subprocess.run(["pip", "install", "torch-scatter==2.1.2"])
+subprocess.run(["pip", "install", "torch"])
 from transformers import TapasForQuestionAnswering, TapasTokenizer
 import pandas as pd
 import streamlit as st
