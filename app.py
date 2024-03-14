@@ -1,5 +1,5 @@
 import subprocess
-subprocess.run(["pip", "install", "torch==1.10.0"])
+subprocess.run(["pip", "install", "torch-scatter==2.1.2"])
 from transformers import TapasForQuestionAnswering, TapasTokenizer
 import pandas as pd
 import streamlit as st
@@ -10,7 +10,7 @@ def install_package(package_name):
         print(f"Successfully installed {package_name}")
     except subprocess.CalledProcessError:
         print(f"Failed to install {package_name}")
-install_package("torch")
+install_package("torch-scatter==2.1.2")
 
 # Set up TAPAS model and tokenizer
 tokenizer = TapasTokenizer.from_pretrained("google/tapas-base-finetuned-wtq")
