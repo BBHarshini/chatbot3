@@ -1,4 +1,4 @@
-import subprocess
+'''import subprocess
 subprocess.run(["pip", "install", "torch"])
 #def install_package(package_name):
    # try:
@@ -9,14 +9,14 @@ subprocess.run(["pip", "install", "torch"])
 #install_package("torch-scatter -f https://pytorch-geometric.com/whl/torch-1.8.0+cu101.html")
 subprocess.run(["pip", "install", "torch-scatter -f https://pytorch-geometric.com/whl/torch-1.8.0+cu101.html"])
 
-from transformers import TapasForQuestionAnswering, TapasTokenizer
+from transformers import TapasForQuestionAnswering, TapasTokenizer'''
 import pandas as pd
 import streamlit as st
 
 
 # Set up TAPAS model and tokenizer
-tokenizer = TapasTokenizer.from_pretrained("google/tapas-base-finetuned-wtq")
-model = TapasForQuestionAnswering.from_pretrained("google/tapas-base-finetuned-wtq")
+#tokenizer = TapasTokenizer.from_pretrained("google/tapas-base-finetuned-wtq")
+#model = TapasForQuestionAnswering.from_pretrained("google/tapas-base-finetuned-wtq")
 
 # Load the conversation table
 conversation_table = pd.read_csv("Conversation.csv")
